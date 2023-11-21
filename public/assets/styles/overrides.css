@@ -1,0 +1,138 @@
+/* Max width 1080px */
+@media (max-width: 1080px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    #header {
+        height: 30rem!important;
+    }
+    .header .content h1 {
+        font-size: 30px!important;
+    }
+}
+
+/* Max width 940px */
+@media (max-width: 940px) {
+    #header {
+        height: 10rem!important;
+    }
+    .header {
+        height: 50vh!important;
+    }
+}
+
+/* Max width 720px */
+@media (max-width: 720px) {
+    #header {
+        height: 10rem!important;
+    }
+    .header {
+        height: 50vh!important;
+    }
+    .header .content h2 {
+        display: none!important;
+    }
+    .fixed-bottom {
+        position: relative!important;
+    }
+    #trainings {
+        margin-bottom: 80px!important;
+    }
+    .social-icons {
+        display: none;
+    }
+    .footer{
+        text-align:left!important;
+        padding:5%!important;
+        display:flex!important;
+    }
+    .footer .footer-text p{
+        font-size: 0.8rem!important;
+    }
+    .footer .footer-icons a i{
+        margin:0% 3%!important;
+    }
+}
+
+/* Max width 520px */
+@media (max-width: 520px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 1rem!important;
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .header {
+        height: 40vh!important;
+    }
+    .header .content h1 {
+        /* display: none!important; */
+        font-size: 1.2rem!important;
+    }
+    .header .navbar .nav-item .nav-link {
+        font-size: 1.2rem!important;
+    } 
+    #details p {
+        font-size: 1rem!important;
+    }
+    #social-details p {
+        font-size: 1rem!important;
+    }
+    #about__a .container p {
+        font-size: 1rem!important;
+    }
+    #about__b .card p {
+        font-size: 1rem!important;
+    }
+    #projects-icons {
+        display: none;
+    }
+    #contact__a {
+        display: grid!important;
+        .form-fields {
+            grid-template-areas: 
+                'name'
+                'email'
+                'subject'
+                'phone'
+                'message'
+                'button' !important;
+        }
+    }
+
+}
+
+/* Min width 240px */
+@media (min-width: 240px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row!important;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none!important;
+    }
+}
+
+/* carousel */
+@media only screen and (max-width: 768px) {
+    .items {
+      animation: carouselAnim 35s infinite alternate linear;
+}
+    
+@keyframes carouselAnim {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(calc(-100% + (2 * 300px)));
+      }
+    }
+}
+
+@keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (5 * 300px)));
+    }
+}

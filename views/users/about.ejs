@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head")  %> 
+        <link rel="stylesheet" href="/static/assets/styles/about.css">
+        <title>Hakkında - <%= title %></title>
+    </head>
+  <body>
+
+    <!-- header -->
+    <div class="header">
+      <%- include("../partials/nav")  %> 
+    </div>
+
+    <!-- section a -->
+    <section id="about__a" class=" py-4">
+      <div class="container">
+        <h2 class="section-title text-center my-4">Hakkında</h2>
+        <div class="border-bottom"></div>
+        <h4 class="lead py-4">
+          <p>
+            <span>Serkan Tanyildizi</span>, 1986 yılında İstanbul, Kadıköy'de Karstan göç eden Türkmen bir ailenin çocuğu olarak doğdu. İlk, orta ve lise eğitimini İstanbul'da tamamladı. 1992 yılında Kayışdağı ilkokuluna başladı 1997 de mezun olduğu sırada ilk okul eğitimin 8 yıla çıkarılmasıyla eğitimine İçerenköy Hasanleyli İlk Öğretim Okulunda devam ederek 2000 yılında mezun oldu. 2000 yılında başladığı Nuri Cıngıllıoğlu Yabancı Dil Ağırlıklı Fen Lisesinden 2004 yılında mezun oldu. 2005 yılında başladığı Dumlupınar Üniversitesi, İnşaat Mühendisliği Lisans programını 2011 yılında bitirdi. 2010 yılında, ERASMUS programı ile POLONYA (Opole University of Technology)Politechnika Opolska Üniversitesi‘nde Deprem Mühendisliği, Betonarme, Betonarme Köprüler üzerine eğitim gördü. 
+          </p>
+          <p>
+            2011 yılında İnşaat Mühendisi olarak Yağmur İnşaat Firmasında Gayrettepe Türk Telekom Genel Müdürlük Servis Yönetim Merkezi(SMC) tadilatında Şantiye şefi olarak görev yaptı. Sonrasında kısa bir süre Maltepe Hükümet Konağı inşaatında şantiye şefliği yaptı. 2012 yılında Taş Yapı Denetim firmasında Ataşehir, Ümraniye, Sancaktepe, Maltepe, Kartal, Sultanbeyli bölgelerinde yapıların kontrol mühendisliğini yaptı. 2014 yılında Ataşehir Belediyesinde çalışmaya başladı. Yapı Kontrol Müdürlüğü, Kentsel Dönüşüm Müdürlüğü, Fen İşleri Müdürlüğü, Park ve Bahçeler Müdürlüğü birimlerinde görev yaptı. 2018 yılı İmar Affı kapsamında Çevre ve Şehircilik İl Müdürlüğü talebi üzerine Ataşehir İmar Barışı sorumlusu görevini yaptı.
+          </p>
+          <p>
+            2020 yılında Cumhurbaşkanlığı talimatı ile Kamu Yapı Envanter Sistemi(KAYES) Deprem ve Risk Analizi kapsamında Ataşehir ilçesindeki kamu yapıları üzerine çalışma yaptı. Siyasi ve Sosyal Medya Çalışmaları, 2014 yılında CHP Ataşehir Seçim ve Koordinasyon, 2015 yılında 25. Dönem TBMM Milletvekili Seçim ve Koordinasyon, 2018 Cumhurbaşkanlığı Seçim ve Koordinasyon, CHP Genel Başkan Yardımcısı Sosyal Medya Danışman ve Koordinasyon görevlerini yaptı.
+          </p>
+        </h4>
+      </div>
+    </section>
+
+    <!-- section b -->
+    <section id="about__b" class="text-center py-5 container">
+      <div class="card m-3">
+        <div class="m-3 row g-2">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <img src="/static/assets/images/img9.webp" class="img-fluid rounded-start" alt="" />
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 card-body p-3">
+            <h4 class="card-title">Siyasi ve Sosyal Medya Çalışmaları</h4>
+            <p class="card-text">
+              2014 Yılında CHP Ataşehir Seçim ve Koordinasyon, 2015 yılında 25. Dönem TBMM Milletvekili Seçim ve Koordinasyon, 2018 Cumhurbaşkanlığı Seçim ve Koordinasyon, CHP Genel Başkan Yardımcısı Sosyal Medya Danışman ve Koordinasyon görevlerini yaptı.
+            </p>
+            <p>Daima Atatürk'ün yolunda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- social media icons -->
+    <%- include("../partials/mediaicons")  %> 
+
+    <!-- Footer -->
+    <%- include("../partials/footer")  %> 
+  </body>
+</html>

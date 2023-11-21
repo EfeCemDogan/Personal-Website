@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head")  %> 
+    <link rel="stylesheet" href="/static/assets/styles/contact.css">
+    <title>İletişim - <%= title %></title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="header">
+      <%- include("../partials/nav")  %> 
+    </div>
+
+    <!-- Section a -->
+    <section id="contact__a" class="text-center py-5">
+      <div class="card container">
+
+        <div class="container py-4">
+          <h2 class="section-title">İletişime Geç</h2>
+          <div class="border-bottom py-2"></div>
+          <p class="lead py-2">Lütfen bilgilerinizi doğru ve eksiksiz doldurunuz.</p>
+          <form 
+            method="POST">
+            <div class="form-fields">
+              <input
+                type="text"
+                class="name input"
+                name="fullname"
+                id="fullname"
+                placeholder="İsim"
+              />
+              <input
+                type="text"
+                class="subject input"
+                name="subject"
+                placeholder="Konu"
+                id="subject"
+              />
+              <input
+                type="email"
+                class="email input"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <input
+                type="tel"
+                class="phone input"
+                name="phone"
+                id="phone"
+                placeholder="Telefon"
+              />
+              <textarea
+                name="message input"
+                class="message"
+                id="message"
+                placeholder=" Mesajınız"
+              ></textarea>
+              <div data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn btn-dark">Gönder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section b -->
+    <section id="contact__b" style="margin-bottom: 80px" class="">
+      <div class="container">
+        <div class="contact-info row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <i class="fas fa-envelope fa-2x"></i>
+              <h3>Email</h3>
+              <p>bilgi@serkantanyildizi.com</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <i class="fas fa-address-card fa-2x"></i>
+              <h3>Address</h3>
+              <p>İstanbul, Türkiye</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- social media icons -->
+    <%- include("../partials/mediaicons")  %> 
+
+    <!-- Footer -->
+    <%- include("../partials/footer")  %> 
+
+  </body>
+</html>
